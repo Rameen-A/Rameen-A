@@ -28,5 +28,5 @@ Here are some ideas to get you started:
 C# • JavaScript • HTML • CSS • Python • Bash script
 ## 🛠 My Favorite Tools
 VSCode • Canva • Google Cloud
-##Fun fact:
+##   Fun facts
 Henna artist • personal salon • painting • photographer 
