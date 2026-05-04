@@ -1,18 +1,18 @@
 body {
   margin: 0;
-  background-color: black;
+  background-color: rgb(19, 5, 5);
 }
 
 /* article mods */
 
-section {
+section  {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   height: 100vh;
 
-  background-image: url(../assets/images/yYXxa_.gif);
+  background-image: url(../assets/images/9a61269bd961543ec7b161a66536ad3a.gif);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,6 +27,10 @@ section a {
 article {
   opacity: 0;
   transition: opacity 0.5s ease-in;
+}
+.about{
+  background-color: rgb(123, 34, 95);
+
 }
 
 section:hover article {
