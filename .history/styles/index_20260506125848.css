@@ -17,8 +17,7 @@ body {
   background-repeat: no-repeat;
 }
 
-section a {
-  /*! add border with .hero a and .card a*/
+section a { /*! add border with .hero a and .card a*/
   border: 2px solid white;
   padding: 0.5rem; /* rem for padding/margin */
   border-radius: 20px; /* px fine for offsets */
@@ -33,7 +32,7 @@ article {
   position: fixed;
   top: 0;
   left: -250px;
-  width: 200px; /*! width uses % */
+  width: 200px;/*! width uses % */
   height: 100vh;
   background: rgba(0, 0, 0, 0.9);
 
@@ -196,8 +195,7 @@ article {
   text-decoration: none;
 }
 
-section:hover article {
-  /*! wont hover on mobile - need to remove*/
+section:hover article { /*! wont hover on mobile - need to remove*/
   opacity: 1;
 }
 /*CONTACT PAGE*/
@@ -283,7 +281,7 @@ nav {
 nav ul {
   display: flex;
   justify-content: flex-end;
-  margin: 0; /*! add rem */
+  margin: 0;/*! add rem */
 }
 
 nav ul li {

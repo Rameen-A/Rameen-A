@@ -17,8 +17,7 @@ body {
   background-repeat: no-repeat;
 }
 
-section a {
-  /*! add border with .hero a and .card a*/
+section a { /*! add border with .hero a and .card a*/
   border: 2px solid white;
   padding: 0.5rem; /* rem for padding/margin */
   border-radius: 20px; /* px fine for offsets */
@@ -33,7 +32,7 @@ article {
   position: fixed;
   top: 0;
   left: -250px;
-  width: 200px; /*! width uses % */
+  width: 200px;
   height: 100vh;
   background: rgba(0, 0, 0, 0.9);
 
@@ -80,7 +79,7 @@ article {
   align-items: center;
   gap: 1.5rem;
   margin: 0 1rem;
-  max-width: 500px; /*! max width uses % */
+  max-width: 500px;
   text-align: left;
 }
 .about img {
@@ -90,7 +89,7 @@ article {
   vertical-align: middle;
   border: 3px solid rgba(118, 20, 57s, 0.2); /*! error with 57s*/
   width: 100%;
-  max-width: 280px; /*! max width uses % */
+  max-width: 280px;
   height: auto;
   overflow: hidden;
 }
@@ -142,7 +141,7 @@ article {
   gap: 1.5rem;
   align-items: center;
   margin: 0 1rem;
-  max-width: 500px; /*! max width uses % */
+  max-width: 500px;
   text-align: left;
 }
 .card {
@@ -156,7 +155,7 @@ article {
   align-items: center;
   gap: 1rem;
   margin: 0.5rem;
-  max-width: 500px; /*! max width uses % */
+  max-width: 500px;
 }
 
 .card:hover {
@@ -196,8 +195,7 @@ article {
   text-decoration: none;
 }
 
-section:hover article {
-  /*! wont hover on mobile - need to remove*/
+section:hover article { /*! wont hover on mobile - need to remove*/
   opacity: 1;
 }
 /*CONTACT PAGE*/
@@ -222,7 +220,7 @@ section:hover article {
   flex-direction: column;
   gap: 1.5rem;
   width: 100%;
-  max-width: 400px; /*! max width uses % */
+  max-width: 400px;
 }
 .contact-card {
   background-color: #deb2de;
@@ -283,7 +281,7 @@ nav {
 nav ul {
   display: flex;
   justify-content: flex-end;
-  margin: 0; /*! add rem */
+  margin: 0;
 }
 
 nav ul li {

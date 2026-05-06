@@ -1,0 +1,36 @@
+/* FONT DEFS */
+@font-face {
+    font-family: "main font";
+    src: url(../assets/fonts/Carme/Carme-Regular.ttf);
+  }
+  
+  /* CROSS PAGE STYLES */
+  body {
+    color: white;
+    font-family: "main font", Verdana, sans-serif;
+    margin:auto; /* ! margin needs to be default so 0*/
+  }
+  
+  h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5rem; /*! too small for desktop*/
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.75rem; /*! too small*/
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+a:hover{
+    text-decoration: underline;
+
+}
+
+
+  
