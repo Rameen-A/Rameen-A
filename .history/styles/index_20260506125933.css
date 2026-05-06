@@ -25,7 +25,8 @@ section a {
 }
 
 article {
-  opacity: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
 }
 /*menu bar */
 .menu {
@@ -83,11 +84,15 @@ article {
   text-align: left;
 }
 .about img {
-  max-width: 40%;
+  object-fit: cover; /*internet */
   border-radius: 50%;
-  overflow: hidden;
   display: inline-block;
   vertical-align: middle;
+  border: 3px solid rgba(118, 20, 57s, 0.2); /*! error with 57s*/
+  width: 100%;
+  max-width: 280px; /*! max width uses % */
+  height: auto;
+  overflow: hidden;
 }
 .about-list li {
   font-size: 0.95rem;
@@ -123,7 +128,6 @@ article {
   align-items: center;
   padding-top: 4rem;
   padding-bottom: 3rem;
-  flex-direction: column;
 }
 .projects h2 {
   font-size: 1.75rem;
@@ -192,6 +196,10 @@ article {
   text-decoration: none;
 }
 
+section:hover article {
+  /*! wont hover on mobile - need to remove*/
+  opacity: 1;
+}
 /*CONTACT PAGE*/
 .contact {
   display: flex;

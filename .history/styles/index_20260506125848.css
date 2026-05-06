@@ -17,22 +17,22 @@ body {
   background-repeat: no-repeat;
 }
 
-section a {
-  /*! add border with .hero a and .card a*/
+section a { /*! add border with .hero a and .card a*/
   border: 2px solid white;
   padding: 0.5rem; /* rem for padding/margin */
   border-radius: 20px; /* px fine for offsets */
 }
 
 article {
-  opacity: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
 }
 /*menu bar */
 .menu {
   position: fixed;
   top: 0;
   left: -250px;
-  width: 200px; /*! width uses % */
+  width: 200px;/*! width uses % */
   height: 100vh;
   background: rgba(0, 0, 0, 0.9);
 
@@ -83,11 +83,15 @@ article {
   text-align: left;
 }
 .about img {
-  max-width: 40%;
+  object-fit: cover; /*internet */
   border-radius: 50%;
-  overflow: hidden;
   display: inline-block;
   vertical-align: middle;
+  border: 3px solid rgba(118, 20, 57s, 0.2); /*! error with 57s*/
+  width: 100%;
+  max-width: 280px; /*! max width uses % */
+  height: auto;
+  overflow: hidden;
 }
 .about-list li {
   font-size: 0.95rem;
@@ -123,7 +127,6 @@ article {
   align-items: center;
   padding-top: 4rem;
   padding-bottom: 3rem;
-  flex-direction: column;
 }
 .projects h2 {
   font-size: 1.75rem;
@@ -192,6 +195,9 @@ article {
   text-decoration: none;
 }
 
+section:hover article { /*! wont hover on mobile - need to remove*/
+  opacity: 1;
+}
 /*CONTACT PAGE*/
 .contact {
   display: flex;
@@ -275,7 +281,7 @@ nav {
 nav ul {
   display: flex;
   justify-content: flex-end;
-  margin: 0; /*! add rem */
+  margin: 0;/*! add rem */
 }
 
 nav ul li {
