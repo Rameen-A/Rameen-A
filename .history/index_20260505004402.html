@@ -9,7 +9,7 @@
   </head>
   <body>
     <nav class="sidebar">
-      <button class="menu-button">☰</button>
+      <button class="menu-toggle" aria-label="Open Menu">☰</button>
       <ul class="menu">
         <li><a href="#about">About me</a></li>
         <li><a href="#projects">View Projects</a></li>
@@ -20,11 +20,11 @@
     <section class="hero">
       <article>
         <h1>Rameen Amir</h1>
-        <h3>Computer Science student | Business Artist</h3>
+        <h2>Computer Science student | Business Artist</h2>
         <a href="#projects">View Projects</a>
       </article>
     </section>
-    <!-- About Me Section -->
+    <!-- About Section -->
     <section class="about" id="about">
       <img
         src="assets/images/686415663_1672869123865112_6993977710073232581_n.jpg"
@@ -54,9 +54,9 @@
         <article class="card">
           <h3>Pac-man game</h3>
           <p>
-            A console PacMan style game built in C# for Programming 1. Features
-            a live timer, score tracking, high score system, and a main menu
-            rendered entirely in the terminal.
+            A console Snake game built in C# for Programming 1. Features a live
+            timer, score tracking, high score system, and a main menu rendered
+            entirely in the terminal.
           </p>
           <p class="tech">C# · .NET · Console</p>
           <a href="" target="_blank">View Code</a>
@@ -77,57 +77,5 @@
         </article>
       </div>
     </section>
-    <!-- Contact Section -->
-    <section class="contact">
-      <h2 id="contact">Contact</h2>
-      <div class="contact-cards">
-        <div class="contact-card">
-          <p class="default">Email</p>
-          <a href="mailto:rameenamir.ca@gmail.com" class="hover-text"
-            >rameenamir.ca@gmail.com</a
-          >
-        </div>
-
-        <div class="contact-card">
-          <p class="contact-label">LinkedIn</p>
-          <a
-            href="https://www.linkedin.com/in/rameen-amir-5a9912349/"
-            target="_blank"
-            >Rameen Amir</a
-          >
-        </div>
-        <div class="contact-card">
-          <p class="contact-label">Phone Number</p>
-          <a href="tel:5145617912">514-561-7912</a>
-        </div>
-        <div class="contact-card">
-          <p class="contact-label">Henna Business Instagram</p>
-          <a
-            href="https://www.instagram.com/henna_byrameen?igsh=OGZzczk1ZWl6bW9p"
-            target="_blank"
-            >Henna_byrameen</a
-          >
-        </div>
-        <div class="contact-card">
-          <p class="contact-label">CV</p>
-          <a href="assets/images/rameen cv 26.png" target="_blank">View CV</a>
-        </div>
-      </div>
-    </section>
   </body>
-  <script>
-    const button = document.querySelector(".menu-button");
-    const menu = document.querySelector(".menu");
-    const links = document.querySelectorAll(".menu a");
-
-    button.addEventListener("click", () => {
-      menu.classList.toggle("show");
-    });
-
-    links.forEach((link) => {
-      link.addEventListener("click", () => {
-        menu.classList.remove("show");
-      });
-    });
-  </script>
 </html>

@@ -153,8 +153,8 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  margin: 0.5rem;
+  gap: 1.5rem;
+  margin: 0 1rem;
   max-width: 500px;
 }
 
@@ -207,9 +207,9 @@ section:hover article {
   min-height: 100vh;
   padding: 4rem 1rem;
 
-  background-color: rgb(2, 0, 0);
+  background-color: rgb(40, 20, 60);
 }
-.contact h2 {
+.contact h1 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
   letter-spacing: 0.3em;
@@ -223,48 +223,21 @@ section:hover article {
   max-width: 400px;
 }
 .contact-card {
-  background-color: #deb2de;
-  padding: 1rem;
+  background-color: #e18de1;
+  padding: 1.5rem;
   border-radius: 10px;
   text-align: center;
+
   position: relative;
   overflow: hidden;
-}
-.default {
-  display: block;
-  transition: opacity 0.3s ease;
-}
-.hover-text {
-  position: absolute;
-  inset: 0; /* fills the card */
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.contact-card:hover {
-  transform: translateY(-5px);
-  transition: transform 0.3s ease;
 }
 .contact-card a {
   opacity: 0;
   transition: opacity 0.3s ease;
   display: block;
   margin-top: 0.5rem;
-  background-color: rgb(8, 0, 8);
 }
 .contact-card:hover a {
-  opacity: 1;
-  background-color: #ed8eda;
-}
-.contact-card:hover .default {
-  opacity: 0;
-}
-
-.contact-card:hover .hover-text {
   opacity: 1;
 }
 .contact-card .label {
