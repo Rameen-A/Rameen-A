@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio Project</title>
+    <link rel="stylesheet" href="styles/globals.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Content</a></li>
+        <li><a href="#projects">View Projects</a></li>
+      </ul>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+      <article>
+        <h1>Rameen Amir</h1>
+        <h2>Computer Science student | Business Artist</h2>
+        <a href="#projects">View Projects</a>
+      </article>
+    </section>
+    <!-- About Section -->
+    <section class="about" id="about">
+      <img src="assets/profile.jpg" alt="Profile Picture" />
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>
+          I am a Computer Science student with a passion for business and
+          creating. I have experience in c# and UI, project and management. I am
+          always looking for new opportunities to learn and grow in both fields.
+        </p>
+        <ul>
+          <li>Software Development</li>
+          <li>Project Management</li>
+          <li>Business Strategy</li>
+        </ul>
+        <p class="tools-labels">Tools & Technologies:</p>
+        <ul class="tools-list">
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>C#</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Snake Game</h3>
+          <p>
+            A console Snake game built in C# for Programming 1. Features a live
+            timer, score tracking, high score system, and a main menu rendered
+            entirely in the terminal.
+          </p>
+          <p class="tech">C# · .NET · Console</p>
+          <a href="" target="_blank">View Code</a>
+        </article>
+        <article class="card">
+          <h3>Trash Sorting AI</h3>
+          <p>
+            A machine learning model trained on Teachable Machine to classify
+            garbage into 4 categories: glass, plastic, paper, and metal.
+            Integrated with a p5.js web app that sends predictions to a
+            Raspberry Pi Pico via serial, lighting up different LEDs based on
+            the result.
+          </p>
+          <p class="tech">
+            Teachable Machine · p5.js · Arduino · Raspberry Pi Pico
+          </p>
+          <a href="" target="_blank">View Project</a>
+        </article>
+      </div>
+    </section>
+  </body>
+</html>

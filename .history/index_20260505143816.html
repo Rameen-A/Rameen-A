@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio Project</title>
+    <link rel="stylesheet" href="styles/globals.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <nav class="sidebar">
+      <button class="menu-button">☰</button>
+      <ul class="menu">
+        <li><a href="#about">About me</a></li>
+        <li><a href="#projects">View Projects</a></li>
+        <li><a href="#contact">My Info </a></li>
+      </ul>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+      <article>
+        <h1>Rameen Amir</h1>
+        <h3>Computer Science student | Business Artist</h3>
+        <a href="#projects">View Projects</a>
+      </article>
+    </section>
+    <!-- About Me Section -->
+    <section class="about" id="about">
+      <img
+        src="assets/images/686415663_1672869123865112_6993977710073232581_n.jpg"
+        alt="Profile Picture"
+      />
+      <div class="about-content">
+        <h2 class="aboutMe">About Me</h2>
+        <p>
+          I am a Computer Science student with a passion for business and
+          creating. I have experience in c# and UI, project and management. I am
+          always looking for new opportunities to learn and grow in both fields.
+        </p>
+        <p class="tools-labels">Tools & Technologies:</p>
+        <ul class="tools-list">
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>C#</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Pac-man game</h3>
+          <p>
+            A console PacMan style game built in C# for Programming 1. Features
+            a live timer, score tracking, high score system, and a main menu
+            rendered entirely in the terminal.
+          </p>
+          <p class="tech">C# · .NET · Console</p>
+          <a href="" target="_blank">View Code</a>
+        </article>
+        <article class="card">
+          <h3>Trash Sorting AI</h3>
+          <p>
+            A machine learning model trained on Teachable Machine to classify
+            garbage into 4 categories: glass, plastic, paper, and metal.
+            Integrated with a p5.js web app that sends predictions to a
+            Raspberry Pi Pico via serial, lighting up different LEDs based on
+            the result.
+          </p>
+          <p class="tech">
+            Teachable Machine · p5.js · Arduino · Raspberry Pi Pico
+          </p>
+          <a href="" target="_blank">View Project</a>
+        </article>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact">
+      <h2 id="contact">Contact</h2>
+      <div class="contact-cards">
+        <div class="contact-card">
+            <p class="contact-label">Email</p>
+            <a href="mailto:rameenamir.ca@gmail.com">rameenamir.ca@gmail.com</a>
+      </div>
+
+      <div class="contact-card">
+        <p class="contact-label">LinkedIn</p>
+        <a href="https://www.linkedin.com/in/rameen-amir/" target="_blank">linkedin.com/in/rameen-amir</a>
+        </div>
+
+    </section>
+  </body>
+  <script>
+    const button = document.querySelector(".menu-button");
+    const menu = document.querySelector(".menu");
+    const links = document.querySelectorAll(".menu a");
+
+    button.addEventListener("click", () => {
+      menu.classList.toggle("show");
+    });
+
+    links.forEach((link) => {
+      link.addEventListener("click", () => {
+        menu.classList.remove("show");
+      });
+    });
+  </script>
+</html>

@@ -1,0 +1,303 @@
+body {
+  margin: 0;
+  top: 0;
+  background-color: black;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+
+  background-image: url(../assets/images/9a61269bd961543ec7b161a66536ad3a.gif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero a,
+.card a {
+  border: 2px solid rgb(238, 236, 236);
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+article {
+  opacity: 1;
+}
+/*menu bar */
+.menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 200px; /*! width uses % */
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+}
+
+.menu.show {
+  left: 0;
+  transition: left 0.3s ease;
+}
+.menu-button {
+  opacity: 0.6;
+  font-size: 2rem;
+
+  background: transparent;
+  border: none;
+  outline: none; /*! removes focus, need color*/
+
+  color: white;
+  cursor: pointer;
+}
+
+/*about me section */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+
+  background-color: rgb(203, 135, 181);
+}
+.about h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0 1rem;
+  max-width: 500px; /*! max width uses % */
+  text-align: left;
+}
+.about img {
+  max-width: 40%;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+.about-list li {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.tools-labels {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+.tools-list {
+  display: flex;
+  flex-wrap: wrap; /* allows items to wrap / internet*/
+  gap: 1rem;
+  text-align: left;
+}
+.tools-list li {
+  background-color: rgba(255, 252, 252, 0.08);
+  border: 1px solid rgba(82, 4, 35, 0.2);
+  border-radius: 20px;
+  padding: 0.3rem 0.85rem;
+  font-size: 0.8rem;
+}
+/*PROJECTS*/
+.projects {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(125, 64, 144);
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  flex-direction: column;
+}
+.projects h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  margin: 0 1rem;
+  max-width: 500px; /*! max width uses % */
+  text-align: left;
+}
+.card {
+  background-color: #e18de1;
+  border: 1px solid rgba(230, 216, 225, 0.1);
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.5rem;
+  max-width: 500px; /*! max width uses % */
+}
+
+.card:hover {
+  border-color: rgba(180, 26, 26, 0.4);
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  opacity: 0.8;
+  margin: 0 0 0.5rem 0;
+}
+
+.card .tech {
+  font-size: 0.75rem;
+  opacity: 0.5;
+  margin: 0.75rem 0;
+}
+
+.card a {
+  display: inline-block;
+  border: 1px solid rgb(244, 239, 242);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.card a:hover {
+  background-color: rgb(247, 235, 235);
+  color: #0a1628;
+  text-decoration: none;
+}
+
+/*CONTACT PAGE*/
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-height: 100vh;
+  padding: 4rem 1rem;
+
+  background-color: rgb(2, 0, 0);
+}
+.contact h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 400px; /*! max width uses % */
+}
+.contact-card {
+  background-color: #deb2de;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.default {
+  display: block;
+  transition: opacity 0.3s ease;
+}
+.hover-text {
+  position: absolute;
+  inset: 0; /* fills the card */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.contact-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+.contact-card a {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: block;
+  margin-top: 0.5rem;
+  background-color: rgb(8, 0, 8);
+}
+.contact-card:hover a {
+  opacity: 1;
+  background-color: #ed8eda;
+}
+.contact-card:hover .default {
+  opacity: 0;
+}
+
+.contact-card:hover .hover-text {
+  opacity: 1;
+}
+.contact-card .label {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+/* nav mods */
+nav {
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0; /*! add rem */
+}
+
+nav ul li {
+  list-style: none;
+  margin: 1rem;
+}
+
+/*mobile-first */
+
+nav ul {
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .about h2,
+  .projects h2 {
+    font-size: 2.5rem;
+  }
+}
+
+/*Tablet and desktop support*/
+/* ! tablet and desktop views need work*/
+/*! project needs to expand and not stacked*/
+@media (min-width: 768px) {
+  nav ul {
+    justify-content: flex-end;
+  }
+}
