@@ -9,10 +9,11 @@
   </head>
   <body>
     <nav class="sidebar">
+      <button class="menu-button">☰</button>
       <ul class="menu">
         <li><a href="#about">About me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#projects">View Projects</a></li>
+        <li><a href="#contact">My Info </a></li>
       </ul>
     </nav>
     <!-- Hero Section -->
@@ -80,7 +81,7 @@
       </div>
     </section>
     <!-- Contact Section -->
-    <section class="contact" class="contact">
+    <section class="contact">
       <h2 id="contact">Contact</h2>
       <div class="contact-cards">
         <div class="contact-card">
@@ -117,4 +118,19 @@
       </div>
     </section>
   </body>
+  <script>
+    const button = document.querySelector(".menu-button");
+    const menu = document.querySelector(".menu");
+    const links = document.querySelectorAll(".menu a");
+
+    button.addEventListener("click", () => {
+      menu.classList.toggle("show");
+    });
+
+    links.forEach((link) => {
+      link.addEventListener("click", () => {
+        menu.classList.remove("show");
+      });
+    });
+  </script>
 </html>

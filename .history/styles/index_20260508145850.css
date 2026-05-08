@@ -30,14 +30,23 @@ article {
   background: rgba(0, 0, 0, 0.9);
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
 }
 
 .menu.show {
   left: 0;
   transition: left 0.3s ease;
 }
+.menu-button {
+  opacity: 0.6;
+  font-size: 2rem;
 
+  background: transparent;
+  border: none;
+  outline: 2px solid transparent;
+
+  color: white;
+  cursor: pointer;
+}
 /* ABOUT ME  */
 .about {
   display: flex;

@@ -27,17 +27,33 @@ article {
 }
 /*menu bar */
 .menu {
+  position: fixed;
+  top: 0;
+  left: -25%;
+  width: 25%;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.9);
+
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  flex-direction: column;
+  padding-top: 5rem;
 }
 
 .menu.show {
   left: 0;
   transition: left 0.3s ease;
 }
+.menu-button {
+  opacity: 0.6;
+  font-size: 2rem;
 
+  background: transparent;
+  border: none;
+  outline: 2px solid transparent;
+
+  color: white;
+  cursor: pointer;
+}
 /* ABOUT ME  */
 .about {
   display: flex;
@@ -193,9 +209,6 @@ article {
 
   background-color: rgb(2, 0, 0);
 }
-.contact p {
-  font-size: 1.2rem;
-}
 .contact h2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
@@ -236,7 +249,7 @@ article {
   transition: opacity 0.3s ease;
 }
 .contact-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-5px);
   transition: transform 0.3s ease;
 }
 .contact-card a {
@@ -244,14 +257,14 @@ article {
   transition: opacity 0.3s ease;
   display: block;
   margin-top: 0.5rem;
-  background-color: #e28ed1;
-  font-size: 1rem;
+  background-color: rgb(8, 0, 8);
 }
 .contact-card:hover a {
   opacity: 1;
-  background-color: #e28ed1;
-  border: 1px solid rgb(237, 215, 234);
-  font-size: 1rem;
+  background-color: #ed8eda;
+}
+.contact-card:hover .default {
+  opacity: 0;
 }
 
 .contact-card:hover .hover-text {
