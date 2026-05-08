@@ -29,7 +29,7 @@ article {
 .menu {
   position: fixed;
   top: 0;
-  left: -25%;
+  left: -250px;
   width: 25%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.9);
@@ -78,7 +78,7 @@ article {
   gap: 1.5rem;
   margin: 0 1rem;
   width: 100%;
-  max-width: 90%;
+  max-width: 90%; /*! max width uses % */
   text-align: left;
 }
 .about img {
@@ -137,8 +137,7 @@ article {
   gap: 1.5rem;
   align-items: center;
   margin: 0 1rem;
-  width: 100%;
-  max-width: 90%;
+  max-width: 500px; /*! max width uses % */
   text-align: left;
 }
 .card {
@@ -152,6 +151,7 @@ article {
   align-items: center;
   gap: 1rem;
   margin: 0.5rem;
+  max-width: 500px; /*! max width uses % */
 }
 
 .card:hover {
@@ -213,7 +213,7 @@ article {
   flex-direction: column;
   gap: 1.5rem;
   width: 100%;
-  max-width: 80%;
+  max-width: 400px; /*! max width uses % */
 }
 .contact-card {
   background-color: #deb2de;
@@ -274,7 +274,7 @@ nav {
 nav ul {
   display: flex;
   justify-content: flex-end;
-  margin: 0rem;
+  margin: 0; /*! add rem */
 }
 
 nav ul li {
@@ -282,38 +282,23 @@ nav ul li {
   margin: 1rem;
 }
 
-/* Mobile-first navigation */
+/*mobile-first */
+
 nav ul {
   justify-content: center;
 }
+@media (min-width: 768px) {
+  .about h2,
+  .projects h2 {
+    font-size: 2.5rem;
+  }
+}
 
-/* Tablet and desktop layouts */
+/*Tablet and desktop support*/
+/* ! tablet and desktop views need work*/
+/*! project needs to expand and not stacked*/
 @media (min-width: 768px) {
   nav ul {
     justify-content: flex-end;
-  }
-
-  .about {
-    flex-direction: row;
-    gap: 3rem;
-    text-align: left;
-  }
-
-  .cards {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .contact-cards {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .about h2,
-  .projects h2,
-  .contact h2 {
-    font-size: 2.5rem;
   }
 }
