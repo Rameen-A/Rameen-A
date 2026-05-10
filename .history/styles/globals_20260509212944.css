@@ -30,12 +30,3 @@ ul {
 a:hover {
   text-decoration: underline;
 }
-@media (min-width: 768px) {
-  h1 {
-    font-size: 3.5rem;
-  }
-
-  a {
-    font-size: 1rem;
-  }
-}

@@ -286,13 +286,11 @@ nav ul {
   }
 
   .about {
+    flex-direction: row;
     gap: 3rem;
     text-align: left;
     flex-direction: row;
     text-align: left;
-  }
-  .card {
-    max-width: 30rem;
   }
 
   .cards {

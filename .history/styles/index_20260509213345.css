@@ -286,6 +286,7 @@ nav ul {
   }
 
   .about {
+    flex-direction: row;
     gap: 3rem;
     text-align: left;
     flex-direction: row;

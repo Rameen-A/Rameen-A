@@ -205,7 +205,7 @@ article {
   width: 100%;
   max-width: 90%;
 
-  margin: 0; /*margin auto*/
+  margin: 0;
   align-items: center;
 }
 .contact-card {
@@ -286,13 +286,11 @@ nav ul {
   }
 
   .about {
+    flex-direction: row;
     gap: 3rem;
     text-align: left;
     flex-direction: row;
     text-align: left;
-  }
-  .card {
-    max-width: 30rem;
   }
 
   .cards {
