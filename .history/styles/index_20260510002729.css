@@ -290,14 +290,13 @@ article {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  border: 1 px solid rgba(240, 229, 229, 0.1);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 .contact-card:hover {
   transform: translateY(-8px);
   transition: transform 0.3s ease;
-  border: 4px solid rgb(171, 133, 157);
 }
 .contact-card a {
   opacity: 0;
@@ -309,8 +308,8 @@ article {
 }
 .contact-card:hover a {
   opacity: 1;
-  background-color: #d07ec1;
-
+  background-color: #e28ed1;
+  border: 1px solid rgb(237, 215, 234);
   font-size: 1rem;
 }
 

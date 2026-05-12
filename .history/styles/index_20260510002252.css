@@ -71,7 +71,7 @@ article {
   object-fit: cover;
   border-radius: 50%;
 
-  border: 4px solid rgb(91, 57, 101);
+  border: 4px solid rgba(250, 250, 250, 0.2);
 }
 .about-list li {
   font-size: 0.95rem;
@@ -93,8 +93,8 @@ article {
   justify-content: center;
 }
 .tools-list li {
-  background-color: rgb(64, 36, 83);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 252, 252, 0.08);
+  border: 1px solid rgba(82, 4, 35, 0.2);
   border-radius: 20px;
   padding: 0.3rem 0.85rem;
   font-size: 0.8rem;
@@ -128,8 +128,8 @@ article {
   text-align: left;
 }
 .card {
-  background-color: #211538;
-  border: 2px solid rgba(201, 187, 196, 0.1);
+  background-color: #311f54;
+  border: 1px solid rgba(230, 216, 225, 0.1);
   border-radius: 10px;
   padding: 1.5rem;
   text-align: left;
@@ -297,7 +297,6 @@ article {
 .contact-card:hover {
   transform: translateY(-8px);
   transition: transform 0.3s ease;
-  border: 4px solid rgb(171, 133, 157);
 }
 .contact-card a {
   opacity: 0;
@@ -309,8 +308,8 @@ article {
 }
 .contact-card:hover a {
   opacity: 1;
-  background-color: #d07ec1;
-
+  background-color: #e28ed1;
+  border: 1px solid rgb(237, 215, 234);
   font-size: 1rem;
 }
 

@@ -28,7 +28,7 @@
       <!-- About Me Section -->
       <section class="about" id="about">
         <img
-          src="assets/images/rameenPFP.jpg"
+          src="assets/images/686415663_1672869123865112_6993977710073232581_n.jpg"
           alt="Profile Picture Of Rameen"
         />
         <!-- !my image doesnt have srcset - will add in the end -->
@@ -95,15 +95,13 @@
           <!-- HENNA -->
           <article class="creative-card">
             <div class="creative-images">
-              <!--! need to compress images-->
-              <!--! need use srcset for images-->
               <img
                 src="./assets/images/henna1.jpg"
                 alt="Bridal henna design created by Rameen Amir"
               />
 
               <img
-                src="./assets/images/henna2nd.jpg"
+                src="./assets/images/henna2.jpg"
                 alt="Detailed hand henna artwork by Rameen Amir"
               />
             </div>
@@ -137,16 +135,21 @@
             <div class="creative-images">
               <img
                 src="./assets/images/calligraphy1-small.jpg"
-                
+                srcset="
+                  ./assets/images/calligraphy1-small.jpg 480w,
+                  ./assets/images/calligraphy1-large.jpg 900w
+                "
+                sizes="(max-width: 768px) 45vw, 20vw"
                 alt="Arabic calligraphy artwork by Rameen Amir"
               />
-              <!--! need to compress images-->
-              <!--! need use srcset for images-->
-
 
               <img
                 src="./assets/images/calligraphy2-small.jpg"
-                
+                srcset="
+                  ./assets/images/calligraphy2-small.jpg 480w,
+                  ./assets/images/calligraphy2-large.jpg 900w
+                "
+                sizes="(max-width: 768px) 45vw, 20vw"
                 alt="Modern acrylic calligraphy painting by Rameen Amir"
               />
             </div>
@@ -156,12 +159,12 @@
 
               <p>
                 I create traditional and modern calligraphy artwork using
-                acrylic painting techniques. My work
+                acrylic painting techniques and typography design. My work
                 focuses on creativity, detail, and visual storytelling.
               </p>
 
               <p class="creative-tech">
-                Traditional Calligraphy · Acrylic Painting 
+                Traditional Calligraphy · Acrylic Painting · Typography
               </p>
             </div>
           </article>
