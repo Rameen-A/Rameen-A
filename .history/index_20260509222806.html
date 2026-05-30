@@ -6,7 +6,6 @@
     <title>Rameen's Portfolio</title>
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="stylesheet" href="./styles/project-details.css" />
   </head>
   <body>
     <nav class="sidebar">
@@ -29,9 +28,11 @@
       <!-- About Me Section -->
       <section class="about" id="about">
         <img
-          src="./assets/images/rameenPFP.jpg"
+          src="assets/images/686415663_1672869123865112_6993977710073232581_n.jpg"
           alt="Profile Picture Of Rameen"
         />
+        <!-- !my image doesnt have srcset - will add in the end -->
+        <!-- !need an svg for menu bar and other spots - will end in the end-->
 
         <div class="about-content">
           <h2 class="aboutMe">About Me</h2>
@@ -57,22 +58,25 @@
         <h2>Projects</h2>
         <div class="cards">
           <article class="card">
-            <h3>Moving Target Arcade Game</h3>
+            <h3>Pac-man game</h3>
             <p>
-              This project is a console-based arcade game built in C#. The
-              player console arcade game in C#. Players control characters using
-              arrow keys to catch targets before the time runs out!
+              A console PacMan style game built in C# for Programming 1.
+              Features a live timer, score tracking, high score system, and a
+              main menu rendered entirely in the terminal.
             </p>
-            <p class="tech">C# · .NET · Console Application</p>
-            <a href="./pages/project-MovingTarget-1.html" target="_blank"
-              >View Source Code</a
+            <p class="tech">C# · .NET · Console</p>
+            <a href="./pages/project-PacMan-1.html" target="_blank"
+              >View Code</a
             >
           </article>
           <article class="card">
             <h3>Trash Sorting AI</h3>
             <p>
-              An AI-powered recycling sorter that identifies waste materials
-              using machine learning and communicates results to hardware.
+              A machine learning model trained on Teachable Machine to classify
+              garbage into 4 categories: glass, plastic, paper, and metal.
+              Integrated with a p5.js web app that sends predictions to a
+              Raspberry Pi Pico via serial, lighting up different LEDs based on
+              the result.
             </p>
             <p class="tech">
               Teachable Machine · p5.js · Arduino · Raspberry Pi Pico
@@ -86,74 +90,53 @@
       <!-- Creative Work Section -->
       <section class="creative-work" id="creativework">
         <h2>Creative Work</h2>
-
         <div class="creative-cards">
-          <!-- HENNA -->
+          <!--HENNA-->
           <article class="creative-card">
-            <div class="creative-images">
-              <img
-                src="./assets/images/henna1.jpg"
-                alt="Bridal henna design created by Rameen Amir"
-              />
-
-              <img
-                src="./assets/images/henna2.jpg"
-                alt="Detailed hand henna artwork by Rameen Amir"
-              />
-            </div>
+            <img
+          src="./assets/images/henna1-small.jpg"
+          srcset="
+            ./assets/images/henna1-small.jpg 480w,
+            ./assets/images/henna1-large.jpg 900w
+          "
+          sizes="(max-width: 768px) 45vw, 20vw"
+          alt="Bridal henna design created by Rameen Amir"
+        />
 
             <div class="creative-content">
-              <h3>Henna Business</h3>
-
-              <p>
-                I run a henna business where I create custom henna designs for
-                clients. I specialize in both traditional and modern styles
-                while managing appointments, social media marketing, and client
-                communication.
-              </p>
-
-              <p class="creative-tech">
-                Business Management · Social Media Marketing · Client Relations
-              </p>
-
-              <a
-                href="https://www.instagram.com/henna_byrameen?igsh=OGZzczk1ZWl6bW9p"
-                target="_blank"
-              >
-                View Instagram
-              </a>
-            </div>
-          </article>
-
-          <!-- CALLIGRAPHY -->
-          <article class="creative-card">
-            <div class="creative-images">
-              <img
-                src="./assets/images/bluecalligraphy.png"
-                alt="Arabic calligraphy artwork by Rameen Amir"
-              />
-
-              <img
-                src="./assets/images/redcalligraphy.jpg"
-                alt="Modern acrylic calligraphy painting by Rameen Amir"
-              />
-            </div>
-
-            <div class="creative-content">
-              <h3>Calligraphy Art</h3>
-
-              <p>
-                I create traditional and modern calligraphy artwork using
-                acrylic painting techniques. My work focuses on creativity,
-                detail, and visual storytelling.
-              </p>
-
-              <p class="creative-tech">
-                Traditional Calligraphy · Acrylic Painting
-              </p>
-            </div>
+             <h3>Henna Business</h3>
+             <p>
+              I run a henna business where I create custom henna designs for
+              clients. I have experience in both traditional and modern henna
+              styles, and I love creating unique designs that reflect my
+              clients' personalities.
+            </p>
+            <p class="creative-tech">
+              Business Management · Social Media Marketing · Client Relations
+            </p>
+            <a
+              href="https://www.instagram.com/henna_byrameen?igsh=OGZzczk1ZWl6bW9p"
+              target="_blank"
+              >View Instagram</a
+            >
           </article>
         </div>
+        <article class = "creative-card">
+          <img
+            src="./assets/images/rameen calligraphy.jpg"
+            alt="Calligraphy artwork created by Rameen Amir"
+          />
+          <div class="creative-content">
+            <h3>Calligraphy Art</h3>
+            <p>
+              I have a passion for calligraphy and have created various pieces
+              of calligraphic art. I enjoy experimenting with different styles
+              and techniques to create unique and visually appealing designs.
+            </p>
+            <p class="creative-tech">Traditional Calligraphy · Modern Calligraphy</p>
+          </div>
+        </article>
+
       </section>
 
       <!-- CONTACT Section -->

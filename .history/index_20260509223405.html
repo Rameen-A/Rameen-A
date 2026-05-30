@@ -6,7 +6,6 @@
     <title>Rameen's Portfolio</title>
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="stylesheet" href="./styles/project-details.css" />
   </head>
   <body>
     <nav class="sidebar">
@@ -29,9 +28,11 @@
       <!-- About Me Section -->
       <section class="about" id="about">
         <img
-          src="./assets/images/rameenPFP.jpg"
+          src="assets/images/686415663_1672869123865112_6993977710073232581_n.jpg"
           alt="Profile Picture Of Rameen"
         />
+        <!-- !my image doesnt have srcset - will add in the end -->
+        <!-- !need an svg for menu bar and other spots - will end in the end-->
 
         <div class="about-content">
           <h2 class="aboutMe">About Me</h2>
@@ -57,22 +58,25 @@
         <h2>Projects</h2>
         <div class="cards">
           <article class="card">
-            <h3>Moving Target Arcade Game</h3>
+            <h3>Pac-man game</h3>
             <p>
-              This project is a console-based arcade game built in C#. The
-              player console arcade game in C#. Players control characters using
-              arrow keys to catch targets before the time runs out!
+              A console PacMan style game built in C# for Programming 1.
+              Features a live timer, score tracking, high score system, and a
+              main menu rendered entirely in the terminal.
             </p>
-            <p class="tech">C# · .NET · Console Application</p>
-            <a href="./pages/project-MovingTarget-1.html" target="_blank"
-              >View Source Code</a
+            <p class="tech">C# · .NET · Console</p>
+            <a href="./pages/project-PacMan-1.html" target="_blank"
+              >View Code</a
             >
           </article>
           <article class="card">
             <h3>Trash Sorting AI</h3>
             <p>
-              An AI-powered recycling sorter that identifies waste materials
-              using machine learning and communicates results to hardware.
+              A machine learning model trained on Teachable Machine to classify
+              garbage into 4 categories: glass, plastic, paper, and metal.
+              Integrated with a p5.js web app that sends predictions to a
+              Raspberry Pi Pico via serial, lighting up different LEDs based on
+              the result.
             </p>
             <p class="tech">
               Teachable Machine · p5.js · Arduino · Raspberry Pi Pico
@@ -92,12 +96,22 @@
           <article class="creative-card">
             <div class="creative-images">
               <img
-                src="./assets/images/henna1.jpg"
+                src="./assets/images/651007743_957361436738739_4661304964432041177_n.jpg"
+                srcset="
+                  ./assets/images/henna1-small.jpg 480w,
+                  ./assets/images/henna1-large.jpg 900w
+                "
+                sizes="(max-width: 768px) 45vw, 20vw"
                 alt="Bridal henna design created by Rameen Amir"
               />
 
               <img
-                src="./assets/images/henna2.jpg"
+                src="./assets/images/henna2-small.jpg"
+                srcset="
+                  ./assets/images/henna2-small.jpg 480w,
+                  ./assets/images/henna2-large.jpg 900w
+                "
+                sizes="(max-width: 768px) 45vw, 20vw"
                 alt="Detailed hand henna artwork by Rameen Amir"
               />
             </div>
@@ -119,6 +133,7 @@
               <a
                 href="https://www.instagram.com/henna_byrameen?igsh=OGZzczk1ZWl6bW9p"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 View Instagram
               </a>
@@ -129,12 +144,22 @@
           <article class="creative-card">
             <div class="creative-images">
               <img
-                src="./assets/images/bluecalligraphy.png"
+                src="./assets/images/calligraphy1-small.jpg"
+                srcset="
+                  ./assets/images/calligraphy1-small.jpg 480w,
+                  ./assets/images/calligraphy1-large.jpg 900w
+                "
+                sizes="(max-width: 768px) 45vw, 20vw"
                 alt="Arabic calligraphy artwork by Rameen Amir"
               />
 
               <img
-                src="./assets/images/redcalligraphy.jpg"
+                src="./assets/images/calligraphy2-small.jpg"
+                srcset="
+                  ./assets/images/calligraphy2-small.jpg 480w,
+                  ./assets/images/calligraphy2-large.jpg 900w
+                "
+                sizes="(max-width: 768px) 45vw, 20vw"
                 alt="Modern acrylic calligraphy painting by Rameen Amir"
               />
             </div>
@@ -144,12 +169,12 @@
 
               <p>
                 I create traditional and modern calligraphy artwork using
-                acrylic painting techniques. My work focuses on creativity,
-                detail, and visual storytelling.
+                acrylic painting techniques and typography design. My work
+                focuses on creativity, detail, and visual storytelling.
               </p>
 
               <p class="creative-tech">
-                Traditional Calligraphy · Acrylic Painting
+                Traditional Calligraphy · Acrylic Painting · Typography
               </p>
             </div>
           </article>

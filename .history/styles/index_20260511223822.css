@@ -20,7 +20,7 @@ body {
   border: 2px solid rgb(235, 223, 223);
   padding: 0.5rem;
   border-radius: 20px;
-  background-color: rgb(224, 137, 198);
+  background-color: rgb(114, 86, 124);
   color: rgb(248, 239, 239);
   text-decoration: none;
 }
@@ -102,9 +102,85 @@ article {
   padding: 0.3rem 0.85rem;
   font-size: 0.8rem;
 }
+/*PROJECTS*/
+.projects {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(19, 2, 45);
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  flex-direction: column;
+}
+.projects h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
 
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  margin: 0 1rem;
+  width: 100%;
+  max-width: 90%;
+  text-align: left;
+}
+.card {
+  background-color: #211538;
+  border: 2px solid rgba(201, 187, 196, 0.1);
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.5rem;
+}
 
-/*CREATIVE WORK*/
+.card:hover {
+  border-color: rgba(244, 243, 243, 0.4);
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  opacity: 0.8;
+  margin: 0 0 0.5rem 0;
+}
+
+.card .tech {
+  font-size: 0.75rem;
+  opacity: 0.5;
+  margin: 0.75rem 0;
+}
+
+.card a {
+  display: inline-block;
+  border: 1px solid rgb(22, 1, 31);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.card a:hover {
+  background-color: rgb(169, 119, 222);
+  color: #eeeff1;
+  text-decoration: none;
+}
+
+/* CREATIVE WORK */
 .creative-work {
   background-color: rgb(2, 2, 40);
   padding: 5rem 1rem;
@@ -121,74 +197,110 @@ article {
 .creative-cards {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 3rem;
   align-items: center;
 }
 
+/* CARD */
 .creative-card {
   background-color: #2c294d;
-  border-radius: 1rem;
-  overflow: hidden;
+
+  border-radius: 1.5rem;
+
   width: 100%;
-  max-width: 22rem;
+  max-width: 24rem;
 
-  transition: transform 0.3s ease;
-}
-.creative-images {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  padding: 0.5rem;
-}
-.creative-images img {
-  border-radius: 10%;
-}
-.creative-content a {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.6rem 1.2rem;
+  padding: 1rem;
 
-  border: 2px solid rgb(237, 236, 243);
-  border-radius: 2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 
-  transition: 0.3s ease;
-}
-.creative-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
   display: flex;
   flex-direction: column;
 }
 
-.creative-content a:hover {
-  background-color: rgb(115, 105, 173);
-  border: 2px solid rgb(39, 31, 88);
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
-.creative-card img {
-  width: 100%;
-  height: 16rem;
-  object-fit: cover;
-  display: block;
+.creative-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
 }
 
+/* IMAGE GRID */
+.creative-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+
+  margin-bottom: 1.2rem;
+}
+
+/* IMAGES */
+.creative-images img {
+  width: 100%;
+  height: 12rem;
+
+  object-fit: cover;
+
+  border-radius: 1rem;
+
+  display: block;
+
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.creative-images img:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+/* CONTENT */
 .creative-content {
-  padding: 1.5rem;
+  padding: 0.5rem;
   text-align: left;
 }
 
 .creative-content h3 {
   margin-bottom: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .creative-content p {
-  line-height: 1.7;
+  line-height: 1.8;
+  font-size: 0.95rem;
 }
+
 .creative-tech {
-  font-size: 0.75rem;
-  opacity: 0.5;
-  margin: 0.75rem 0;
+  opacity: 0.7;
+  font-size: 0.8rem;
+  margin-top: 1rem;
 }
+
+/* BUTTON */
+.creative-content a {
+  display: inline-block;
+
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.4rem;
+
+  border: 2px solid rgb(237, 236, 243);
+  border-radius: 2rem;
+
+  background-color: rgb(114, 86, 124);
+
+  transition: 0.3s ease;
+}
+
+.creative-content a:hover {
+  background-color: rgb(115, 105, 173);
+
+  border: 2px solid rgb(39, 31, 88);
+
+  color: white;
+
+  text-decoration: none;
+}
+
 /*CONTACT PAGE*/
 .contact {
   display: flex;
